@@ -58,16 +58,40 @@ vec.insert(loc, vec2.begin(), vec2.end());
 vec.swap(vec2);
 ```
 
-### Stack, Queue, Deque
+### Deque, Stack, Queue
+* Deque
+```c++
+```
+
 * Stack
 ```c++
+/*
+  stack<T> is a stack for certain data type T.
+  include "stack" header file to use vector.
+*/
+
+#include <stack>
+
+// stack of int element
+stack<int> stk, stk2;
+int n;
+// add n on stk. return nothing.
+stk.push(n);
+// remove the top element of stk. return nothing.
+stk.pop();
+// return the top element of stk
+stk.top();
+// clear stk. return nothing
+stk.clear();
+// return the size of stk.
+stk.size();
+// check if stk is empty. return bool.
+stk.empty();
+// swap two stacks. return nothing.
+stk.swap(stk2); // swap(stk, stk2);
 ```
 
 * Queue
-```c++
-```
-
-* Deque
 ```c++
 ```
 
