@@ -1,4 +1,4 @@
 # coding-cheatsheet
-Cheatsheet for cording.
+Cheatsheet for coding.
 
 * [C++](cpp.md)
