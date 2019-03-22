@@ -67,7 +67,7 @@ vec.swap(vec2);
 ```c++
 /*
   stack<T> is a stack for certain data type T.
-  include "stack" header file to use vector.
+  include "stack" header file to use stack.
 */
 
 #include <stack>
@@ -87,12 +87,38 @@ stk.clear();
 stk.size();
 // check if stk is empty. return bool.
 stk.empty();
-// swap two stacks. return nothing.
+// swap the element of two stacks. return nothing.
 stk.swap(stk2); // swap(stk, stk2);
 ```
 
 * Queue
 ```c++
+/*
+  queue<T> is a queue for certain data type T.
+  include "queue" header file to use queue.
+*/
+
+#include <queue>
+
+// queue for int elements
+queue<int> q, q1;
+int n;
+// add element n on q. return nothing.
+q.push(n);
+// remove the tail element of q. return nothing.
+q.pop();
+// return the top element of q
+q.front();
+// return the tail element of q
+q.back();
+// return the size of q
+q.size();
+// clear the queue. return nothing.
+q.clear();
+// check if q is empty. return bool.
+q.empty();
+// swap the element of two queues. return nothing.
+q.swap(q2); // swap(q, q2);
 ```
 
 ### Map, Set
