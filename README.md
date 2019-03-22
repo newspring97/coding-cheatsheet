@@ -1,4 +1,3 @@
-# coding-cheatsheet
-Cheatsheet for coding.
+# Cheatsheet Index
 
 * [C++](cpp.md)
