@@ -1,15 +1,19 @@
 # C++ Cheatsheet
+Cheatsheet for PS.
+C++ Version: C++11
 
 ## Header files
 ```c++
 #include <iostream> // standard library for C++
 #include <string> // string library for C++
+#include <algorithm> // includes functions such as sort, find, etc
 ```
 
 ## Data Types
 ```c++
 void // Void type
 char // Character type
+bool // Boolean type
 int // Integer type
 long // Long Integer type
 ```
@@ -17,11 +21,70 @@ long // Long Integer type
 ## Data Structures
 
 ### Vector
+```c++
+/*
+  vector<T> is a dynamic container for certain data type T.
+  include "vector" header file to use vector.
+*/
+
+#include <vector>
+
+// vector of int element
+vector<int> vec, vec2;
+int n = 0;
+// size of vec. return int.
+vec.size();
+// add n to the end of vec. return nothing.
+vec.push_back(n);
+// delete the last element of vec. return nothing.
+vec.pop_back();
+// return the first element of vec.
+vec.front();
+// return the last element of vec.
+vec.back();
+// return the n-th element of vec.
+vec.at(n);
+// clear vec. return nothing.
+vec.clear();
+// check if vec is empty. return bool.
+vec.empty();
+// insert n on the location loc of vec.
+// return the location of the inserted element.
+vec.insert(loc, n);
+// insert the vec2's elements(from vec2.begin() to vec2.end()-1) on the loc.
+// return the location of the first of the newly inserted elements.
+vec.insert(loc, vec2.begin(), vec2.end());
+// swap the element of two vectors. return nothing.
+vec.swap(vec2);
+```
 
 ### Stack, Queue, Deque
+* Stack
+```c++
+```
+
+* Queue
+```c++
+```
+
+* Deque
+```c++
+```
 
 ### Pair, Tuple
+* Pair
+```c++
+```
+
+* Tuple
+```c++
+```
 
 ### etc
 
-## Functions
+## Iterator
+
+## Algorithm
+Built-in functions in algorithm header file.
+```c++
+```
