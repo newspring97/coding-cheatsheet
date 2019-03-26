@@ -32,7 +32,8 @@ long // Long Integer type
 
 // vector of int element
 vector<int> vec, vec2;
-int n = 0;
+int n;
+vector<int>::iterator loc;
 // size of vec. return int.
 vec.size();
 // add n to the end of vec. return nothing.
@@ -60,8 +61,42 @@ vec.swap(vec2);
 ```
 
 ### Deque, Stack, Queue
-* Deque
+* Deque: double-ended queue
 ```c++
+/*
+  stack<T> is a deque for certain data type T.
+  include "deque" header file to use deque.
+*/
+
+#include <deque>
+
+// deque of int element
+deque<int> dq, dq2;
+int n, m;
+deque<int>::iterator loc;
+// add n at the front/back. return nothing.
+dq.push_front(n);
+dq.push_back(n);
+// remove the first/last element of dq. return nothing.
+dq.pop_front();
+dq.pop_back();
+// return the first/last element of dq
+dq.front();
+dq.back();
+// return the size of dq
+dq.size();
+// insert n on the certain location loc of dq. return the location of n
+dq.insert(loc, n);
+// insert n on the certain location loc of dq m times
+dq.insert(loc, m, n);
+// insert dq2's elements (from dq2.begin() to dq2.end()-1) on the certain location loc
+dq.insert(loc, dq2.begin(), dq2.end());
+// clear contents of the dq. return nothing
+dq.clear();
+// check if dq is empty. return bool.
+dq.empty();
+// swap contents of two dqs. return nothing.
+dq.swap(dq2) // swap(dq, dq2);
 ```
 
 * Stack
