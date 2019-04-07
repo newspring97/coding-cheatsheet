@@ -157,21 +157,45 @@ q.empty();
 q.swap(q2); // swap(q, q2);
 ```
 
-### Map, Set
-* Map
-```c++
-```
-
-* Set
-```c++
-```
-
 ### Pair, Tuple
 * Pair
 ```c++
 ```
 
 * Tuple
+```c++
+```
+
+
+### Map, Set
+* Map
+```c++
+/*
+  map<T1, T2> is a map that use data type T1 as a key and data type T2 as an element.
+  include "map" header to use map.
+*/
+#include <map>
+
+// map for int key & int element
+map<int, int> m, m1;
+int k, n;
+map<int, int>::iterator it, it1;
+// add <k, n> where k is the key & n is the element
+m.insert(pair<int, int>(k, n)); // m.emplace(k, n);
+// get the iterator of the element with key k
+it = m.find(k);
+// erase the element
+m.erase(k); // m.erase(it);
+// get the element with key k
+m[k];
+// empty, clear, swap do as same as other ds's member functions
+// key_comp/value_comp: compare key/value. return the comparison object
+m.key_comp(it, it1);
+// return the number of elements with key k
+m.count(k);
+```
+
+* Set
 ```c++
 ```
 
