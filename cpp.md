@@ -160,10 +160,38 @@ q.swap(q2); // swap(q, q2);
 ### Pair, Tuple
 * Pair
 ```c++
+/*
+  pair<T1, T2> is a pair that has data type T1 as first and data type T2 as second.
+  include "utility" header to use pair
+*/
+#include <utility>
+
+// pair for <int, int>
+pair<int, int> p, p1;
+// make pair
+p = make_pair(1, 2);
+// first element of pair
+p.first;
+// second element of pair
+p.second;
 ```
 
 * Tuple
 ```c++
+/*
+  tuple<T1, T2> is a tuple that has data type T1 as first element and data type T2 as second element.
+  include "tuple" header to use tuple.
+*/
+#include <tuple>
+
+// make tuple
+int n, m;
+tuple<int, int> t(n, m);
+auto t1 = make_tuple("a", n, 1.2, 'a');
+// return the n-th element of tuple
+get<0>(t); // return n
+// unpack elements of tuple
+tie (e1, e2) = t; // e1 = n, e2 = m
 ```
 
 
