@@ -61,7 +61,9 @@ vec.swap(vec2);
 ```
 
 ### Deque, Stack, Queue
+
 * Deque: double-ended queue
+
 ```c++
 /*
   stack<T> is a deque for certain data type T.
@@ -100,6 +102,7 @@ dq.swap(dq2) // swap(dq, dq2);
 ```
 
 * Stack
+
 ```c++
 /*
   stack<T> is a stack for certain data type T.
@@ -128,6 +131,7 @@ stk.swap(stk2); // swap(stk, stk2);
 ```
 
 * Queue
+
 ```c++
 /*
   queue<T> is a queue for certain data type T.
@@ -196,7 +200,9 @@ tie (e1, e2) = t; // e1 = n, e2 = m
 
 
 ### Map, Set
+
 * Map
+
 ```c++
 /*
   map<T1, T2> is a map that use data type T1 as a key and data type T2 as an element.
@@ -224,6 +230,7 @@ m.count(k);
 ```
 
 * Set
+
 ```c++
 ```
 
@@ -233,5 +240,6 @@ m.count(k);
 
 ## Algorithm
 Built-in functions in algorithm header file.
+
 ```c++
 ```
