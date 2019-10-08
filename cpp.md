@@ -232,6 +232,12 @@ m.count(k);
 * Set
 
 ```c++
+/*
+  set<T> is a set with data type T
+  include "set" header to use map.
+*/
+#include <set>
+
 ```
 
 ### etc
